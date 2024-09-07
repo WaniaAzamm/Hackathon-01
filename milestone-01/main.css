@@ -52,7 +52,7 @@ header p {
 
 .profile-details h2 {
     margin-top: 0;
-    color: #2c3e50;
+    color: #164f56;
 }
 
 section {
@@ -65,7 +65,7 @@ section {
 }
 
 h2 {
-    color: #34495e;
+    color: #196f5f;
 }
 
 ul {
@@ -81,7 +81,7 @@ ul li {
 }
 
 button {
-    background-color: #0d4a3f;
+    background-color: #196f5f;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -93,11 +93,11 @@ button {
 }
 
 button:hover {
-    background-color: #0b3e36;
+    background-color: #196f5f;
 }
 
 footer {
-    background-color: #0d4a3f;
+    background-color: #196f5f;
     color: #ecf0f1;
     padding: 10px;
     text-align: center;
