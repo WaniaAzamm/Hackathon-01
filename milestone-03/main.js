@@ -13,7 +13,7 @@ var _a;
     var skills = document.getElementById('skills').value.split(',');
     var profilePicture = (_a = document.getElementById('profilePicture').files) === null || _a === void 0 ? void 0 : _a[0];
     var resume = document.getElementById('resume');
-    resume.innerHTML = ''; // Clear existing content
+    resume.innerHTML = ''; 
     var reader = new FileReader();
     reader.onload = function (e) {
         var _a;
