@@ -1,0 +1,242 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #30336b;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+}
+
+h2 {
+    color: #30336b;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#form-section, #resume-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form fieldset {
+    border: 2px solid #dcdde1;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ced6e0;
+    font-size: 1em;
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.save-btn {
+    background-color: #dc3545;
+    display: none;
+}
+
+.save-btn:hover {
+    background-color: #c82333;
+}
+
+.resume-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.generate-resume-btn {
+    background-color: #262c97;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.generate-resume-btn:hover {
+    background-color: #0d338c;
+}
+
+input[type="text"].edit-mode,
+input[type="email"].edit-mode,
+input[type="date"].edit-mode {
+    border: 2px solid #30336b;
+    background-color: #fff;
+}
+
+#resume {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resume-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.resume-header img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #30336b;
+}
+
+.resume-header .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.resume-header .personal-info div {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #2d3436;
+}
+
+.resume-section {
+    margin-top: 20px;
+}
+
+.resume-section h3 {
+    font-size: 1.6em;
+    color: #30336b;
+    border-bottom: 2px solid #dcdde1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.resume-section p {
+    font-size: 1.1em;
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #30336b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #resume {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .resume-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .resume-header h1 {
+        font-size: 1.8em;
+    }
+
+    .resume-section h3 {
+        font-size: 1.4em;
+    }
+
+    #form-section, #resume-section {
+        padding: 15px;
+        margin: 10px;
+    }
+}
