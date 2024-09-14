@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    function makeEditable(element, saveButton, editButton) {
+    function makeEditable(element: HTMLElement, saveButton: HTMLButtonElement, editButton: HTMLButtonElement) {
         const currentValue = element.textContent?.trim() || '';
 
         const input = document.createElement('input');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    function makeProfilePictureEditable(profileImageElement, saveButton, editButton) {
+    function makeProfilePictureEditable(profileImageElement: HTMLElement, saveButton: HTMLButtonElement, editButton: HTMLButtonElement) {
         const input = document.createElement('input');
         input.type = 'file';
         input.accept = 'image/*';
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const resumeForm = document.getElementById('resumeForm');
+    const resumeForm = document.getElementById('resumeForm') as HTMLFormElement;
 
     if (resumeForm) {
         resumeForm.addEventListener('submit', function (event) {
@@ -160,9 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>`;
 
                 document.querySelectorAll('.personal-info-item, .resume-section').forEach((item) => {
-                    const span = item.querySelector('.editable');
-                    const editButton = item.querySelector('.edit-btn');
-                    const saveButton = item.querySelector('.save-btn');
+                    const span = item.querySelector('.editable') as HTMLElement;
+                    const editButton = item.querySelector('.edit-btn') as HTMLButtonElement;
+                    const saveButton = item.querySelector('.save-btn') as HTMLButtonElement;
                     if (span && editButton && saveButton) {
                         editButton.addEventListener('click', function () {
                             makeEditable(span, saveButton, editButton);
@@ -170,9 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                const companyText = document.getElementById('company-text');
-                const companyEditBtn = document.getElementById('company-edit-btn');
-                const companySaveBtn = document.getElementById('company-save-btn');
+                const companyText = document.getElementById('company-text') as HTMLElement;
+                const companyEditBtn = document.getElementById('company-edit-btn') as HTMLButtonElement;
+                const companySaveBtn = document.getElementById('company-save-btn') as HTMLButtonElement;
 
                 if (companyText && companyEditBtn && companySaveBtn) {
                     companyEditBtn.addEventListener('click', function () {
@@ -180,9 +180,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
 
-                const durationText = document.getElementById('duration-text');
-                const durationEditBtn = document.getElementById('duration-edit-btn');
-                const durationSaveBtn = document.getElementById('duration-save-btn');
+                const durationText = document.getElementById('duration-text') as HTMLElement;
+                const durationEditBtn = document.getElementById('duration-edit-btn') as HTMLButtonElement;
+                const durationSaveBtn = document.getElementById('duration-save-btn') as HTMLButtonElement;
 
                 if (durationText && durationEditBtn && durationSaveBtn) {
                     durationEditBtn.addEventListener('click', function () {
@@ -210,3 +210,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
