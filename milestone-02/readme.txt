@@ -1,0 +1,1 @@
+I have successfully deployed my project on Vercel and pushed my code to GitHub, making it openly accessible and showcase-ready.
