@@ -48,7 +48,6 @@ document.getElementById('resumeForm')?.addEventListener('submit', function (even
                 </ul>
             </div>
         `;
-
         resume.innerHTML = resumeHTML;
     };
 
