@@ -73,4 +73,3 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.innerHTML = "<p>Invalid URL.</p>";
   }
 });
-//
