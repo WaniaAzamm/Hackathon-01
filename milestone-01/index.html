@@ -3,63 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Interactive Resume</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Wania Azam Resume</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Wania Azam</h1>
-        <p>Frontend Developer | AI Enthusiast | Web3 Advocate</p>
-    </header>
-    
-    <section id="profile-section">
-        <div class="profile-container">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
-            <div class="profile-details">
-                <h2>Contact Details</h2>
-                <p><strong>Email:</strong> waniaazam605@gmail.com</p>
-                <p><strong>Contact:</strong> 03361820282</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="personal-info">
-        <h2>Personal Information</h2>
-        <p><strong>Name:</strong> Wania Azam</p>
-        <p><strong>Date of Birth:</strong> 25-12-2007</p>
-        <p><strong>Address:</strong> Pakistan, Karachi</p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Matriculation:</strong> Completed</p>
-        <p><strong>Current Studies:</strong> Intermediate in Progress</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Frontend Development</li>
+ <div class="container">
+  <div class="left-side">
+     <div class="profiletext">
+      <div class="imgbx">
+        <img src="pic.jpg" alt="profile picture">
+      </div>
+      <h1>Wania Azam</h1>
+      <p class="subtitle">Frontend Developer</p>
+     </div>
+     
+     <div class="contact-info">
+      <h3>Contact Information</h3>
+      <hr>
+      <p><i class="icon-phone"><strong>Phone Number:</strong></i> 0336-1820282</p>
+      <p><i class="icon-email"><strong>Email:</strong></i> <a href="mailto:waiazam605@gmail.com">waniazam605@gmail.com</a></p>
+     </div>
+     
+     <div class="address">
+        <h3>Address</h3>
+        <hr>
+        <p><i class="icon-location"></i> Karachi, Pakistan</p>
+     </div>
+     
+     <div class="skills">
+        <h3>Technical Skills</h3>
+        <hr>
+        <button class="toggle-button" id="toggleSkills">Hide Skills</button> 
+        <ul id="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>Responsive Design</li>
+          <li>Video Editing</li>
+          <li>UI / UX</li>
         </ul>
-    </section>
-
-    <section id="experience">
+     </div>
+     
+     <div class="languages">
+        <h3>Languages</h3>
+        <hr>
+        <pre>English (Fluent)   -   Urdu (Native)</pre>
+     </div>
+  </div>
+  
+  <div class="right-side">
+     <div class="about">
+        <h2>About Me</h2>
+        <hr>
+        <p>I am Wania Azam, a 16-year-old Frontend Developer eager to find a job where I can apply my expertise in HTML, CSS, JavaScript, and TypeScript. I excel in crafting user-centered, responsive web interfaces and am passionate about using my skills to deliver intuitive user experiences. I am excited about the opportunity to contribute to innovative projects that blend technology and design.</p>
+      </div>
+     
+     <div class="professional-summary">
+        <h2>Professional Summary</h2>
+        <hr>
+        <p>As a Frontend Developer with hands-on experience and a solid educational foundation, I bring both creative and technical skills to any team. My experience includes building responsive websites and collaborating in cross-functional teams. Known for my adaptability and attention to detail, I am committed to professional growth in web development, making me an ideal candidate for job opportunities in this field.</p>
+      </div>
+     
+     <div class="work-experience">
         <h2>Work Experience</h2>
-        <p><strong>Position:</strong> Intern Frontend Developer</p>
-        <p><strong>Company:</strong> CodeAlpha</p>
-        <p><strong>Duration:</strong> 1 month</p>
-    </section>
-    
-    <button id="toggleSkills">Show Skills</button>
-    
-    <footer>
-        <p>Developed by Wania Azam</p>
-    </footer>
+        <hr>
+        <h3>Internship at Code Alpha</h3>
+        <p><strong>Role:</strong> Frontend Developer Intern</p>
+        <p><strong>Duration:</strong> 1 Month</p>
+        <p style="margin-top: 10px;">During my internship at Code Alpha, I worked closely to create and style responsive layouts, debug UI issues, and assist in implementing JavaScript components to enhance user interactivity.</p>
+     </div>
+     
+     <div class="education">
+        <h2>Education</h2>
+        <hr>
+        <p><strong>Matriculation:</strong> Scored 80% in Matriculation from Science at Guide Line School</p>
+        <p><strong>Currently Enrolled:</strong> Intermediate from Science</p>
+     </div>
+     
+     <div class="projects">
+        <h2>Projects</h2>
+        <hr>
+        <div class="project-item">
+            <h4>Course Enrollment Website:</h4>
+            <p>Developed a fully responsive, intuitive course enrollment application with advanced UI features, allowing users to seamlessly enroll in courses, view course details. Built with Next.js and Tailwind CSS.</p>
+        </div>
+        <div class="project-item">
+            <h4>Portfolio Website:</h4>
+            <p>Created a responsive, professional portfolio to showcase my skills, projects, and achievements. Utilized Next.js and Tailwind CSS for a visually appealing, user-friendly interface.</p>
+        </div>
+        <div class="project-item">
+            <h4>Student Management System:</h4>
+            <p>Built a comprehensive student management system that streamlines enrollment, using TypeScript to ensure robust functionality.</p>
+        </div>
+     </div>
+     
+     <div class="achievements">
+        <h2>Achievements</h2>
+        <hr>
+        <ul>
+            <li>-Selected as a Senior Student in TypeScript in Giaic.</li>
+            <li>-Achieved 90th percentile in TypeScript exam.</li>
+        </ul>
+     </div>
+  </div>
+ </div>
 
-    <script src="main.js"></script>
+<script src="main.JS">
+  
+</script>
+
 </body>
 </html>
+
