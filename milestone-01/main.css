@@ -1,165 +1,268 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #196f5f;
-    color: #ecf0f1;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 5px 0;
-    font-size: 1.2em;
-}
-
-#profile-section {
+body {
+    background: #f4f7fb;
     display: flex;
     justify-content: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #ddd;
-}
-
-.profile-container {
-    display: flex;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 20px; 
-    box-sizing: border-box; 
+    min-height: 100vh;
+    color: #333;
 }
 
-.profile-picture {
-    border-radius: 50%;
+.container {
+    width: 90%;
+    max-width: 1000px; 
+    background: #fff;
+    margin: 50px auto; 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-side {
+    background: #004147;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.left-side h3 {
+    font-size: 18px;
+    font-weight: 700; 
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #0ccac4; 
+    margin: 10px 0 20px; 
+    width: 20%;
+}
+
+h2, h3 {
+    color: #004147;
+    font-weight: 500;
+    margin-bottom: 15px; 
+}
+
+.profiletext {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.profiletext h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profiletext .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.imgbx {
     width: 150px;
     height: 150px;
-    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.profile-details {
-    max-width: 600px;
+.imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.profile-details h2 {
-    margin-top: 0;
-    color: #164f56;
+.contact-info, .address, .skills, .languages {
+    margin-top: 30px;
+    width: 100%; 
 }
 
-section {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; 
+.contact-info h3, .address h3, .skills h3, .languages h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.contact-info p, .address p, .skills ul li {
+    font-size: 14px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%; 
+}
+
+.contact-info p i, .address p i, .skills ul li:before {
+    font-size: 14px;
+    color: #0ccac4;
+    margin-right: 8px;
+}
+
+.contact-info p strong, .address p strong {
+    color: #ffffff; 
+}
+
+.contact-info a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.skills ul, .achievements ul {
+    list-style-type: none;
+    padding-left: 0; 
+    line-height: 1.8;
+}
+
+.skills ul li, .achievements ul li {
+    padding-left: 5px;
+}
+
+.projects {
+    margin-bottom: 25px; 
+}
+
+.project-item {
+    margin-bottom: 15px; 
+}
+
+.project-item h4 {
+    font-size: 16px; 
+    font-weight: 600; 
+    color: #265e5c; 
+    margin-bottom: 8px; 
+}
+
+.project-item p {
+    font-size: 14px; 
+    margin-bottom: 10px; 
+}
+
+.right-side {
+    padding: 40px;
+}
+
+h2, h3 {
+    color: #004147;
+    font-weight: 500;
 }
 
 h2 {
-    color: #196f5f;
+    font-size: 24px;
+    margin-bottom: 10px; 
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+h3 {
+    font-size: 20px;
 }
 
-ul li {
-    background-color: #ecf0f1;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+h4 {
+    font-size: 18px; 
+    margin-top: 10px; 
 }
 
-button {
-    background-color: #196f5f;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto;
-    font-size: 1em;
+.education, .work-experience, .professional-summary, .projects, .achievements {
+    margin-top: 25px; 
 }
 
-button:hover {
-    background-color: #196f5f;
+.education p, .work-experience p, .professional-summary p {
+    margin-bottom: 10px; 
+    line-height: 1.6; 
 }
 
-footer {
-    background-color: #196f5f;
-    color: #ecf0f1;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-   
-    bottom: 0;
+.work-experience {
+    margin-top: 25px; 
 }
+
+.work-experience h3 {
+    margin-bottom: 15px; 
+}
+
+.work-experience p {
+    margin-top: 15px; 
+    margin-bottom: 10px; 
+    line-height: 1.6; 
+}
+.toggle-button {
+    background-color: #73a4a9; 
+    color: #fff;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #0ccac4; 
+    transform: translateY(-2px);
+}
+
+.toggle-button:active {
+    transform: translateY(1px);
+}
+
 
 @media (max-width: 768px) {
-    #profile-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .container {
+        grid-template-columns: 1fr; 
+        margin: 20px; 
     }
-
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 10px; 
+    
+    .left-side, .right-side {
+        padding: 20px; 
     }
-
-    .profile-picture {
-        margin-bottom: 20px;
+    
+    h2 {
+        font-size: 20px; 
     }
-
-    .profile-details {
-        max-width: 90%;
+    
+    h3 {
+        font-size: 18px; 
     }
-
-    header h1 {
-        font-size: 2em;
+    
+    h4 {
+        font-size: 16px; 
     }
-
-    header p {
-        font-size: 1em;
+    
+    .profiletext h1 {
+        font-size: 22px; 
     }
-}
-
-@media (max-width: 480px) {
-    section {
-        padding: 15px;
-        margin: 10px;
+    
+    .profiletext .subtitle {
+        font-size: 14px; 
     }
-
-    button {
-        padding: 10px 20px;
-        font-size: 0.9em;
+    
+    .contact-info p, .address p, .skills ul li {
+        font-size: 12px; 
     }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header p {
-        font-size: 0.9em;
-    }
-
-    .profile-picture {
-        width: 120px;
-        height: 120px;
+    .toggle-button {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 8px 12px; /* Smaller padding for mobile */
     }
 }
